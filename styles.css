@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #121f91, #564892, #4b134f);
+}
+
+.cover_photo {
+  width: 100%;
+  height: 500px;
+  background-image: url("images/background-vu-tru-dep-chat-luong-cao.jpg"); /* Đường dẫn tới ảnh bìa */
+  background-size: cover; /* Ảnh sẽ bao phủ toàn bộ khung chứa */
+  background-position: center; /* Canh giữa ảnh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Màu chữ trắng */
+  text-align: center;
+}
+
+.blur_box {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px; /* Chiều rộng khung */
+  padding: 60px;
+  background: rgba(224, 217, 217, 0.2); /* Màu nền bán trong suốt */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20200px;
+  /* Hiệu ứng làm mờ nền phía sau khung */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px); /* Hỗ trợ cho Safari */
+  text-align: center;
+  display: flex; /* Sử dụng flex bên trong inner-box nếu muốn sắp xếp nội dung */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 80%; /* Điều chỉnh độ rộng của container nội dung */
+  text-align: left; /* Căn trái cho các dòng chữ */
+  margin-left: 40%;
+}
+
+/* Kiểu chữ cho thông tin bên trong */
+.content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  line-height: 1.4;
+  color: #fff;
+}
+.circle-box {
+  position: absolute;
+  top: 20px; /* Điều chỉnh vị trí theo ý muốn; đặt phần tử nằm "trên" khung */
+  right: 62%;
+  transform: translateX(-50%);
+  width: 280px; /* Chiều rộng của phần tử tròn */
+  height: 280px; /* Chiều cao của phần tử tròn */
+  border-radius: 50%; /* Biến phần tử thành hình tròn */
+  background: rgba(255, 255, 255, 0.2); /* Màu nền bán trong suốt */
+  border: 2px solid #fff; /* Viền trắng */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ẩn phần nội dung vượt ra ngoài */
+}
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
